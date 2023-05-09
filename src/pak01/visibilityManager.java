@@ -1,10 +1,10 @@
 package pak01;
 
-public class visibilityManager {
+public class VisibilityManager {
 	
 	UI ui;
 	
-	public visibilityManager(UI userInterface) {
+	public VisibilityManager(UI userInterface) {
 		
 		ui = userInterface;
 		
@@ -33,7 +33,6 @@ public class visibilityManager {
 		ui.mainTextPanel.setVisible(true);
 		ui.choiceButtonPanel.setVisible(true);
 		ui.playerPanel.setVisible(true);
-				
 		
 	}
 }

@@ -23,7 +23,7 @@ public class UI {
 	JTextArea mainTextArea;
 	
 	
-	public void createUI(ChoiceHandler handler) {
+	public void createUI(ChoiceHandler cHandler) {
 		
 		//Window
 		window = new JFrame();
@@ -50,7 +50,7 @@ public class UI {
 		startButton.setForeground(Color.white);
 		startButton.setFont(normalFont);
 		startButton.setFocusPainted(false);
-		startButton.addActionListener(handler);
+		startButton.addActionListener(cHandler);
 		startButton.setActionCommand("start");
 		startButtonPanel.add(startButton);
 		
@@ -87,7 +87,7 @@ public class UI {
 		choice1.setForeground(Color.white);
 		choice1.setFont(normalFont);
 		choice1.setFocusPainted(false);
-		choice1.addActionListener(handler);
+		choice1.addActionListener(cHandler);
 		choice1.setActionCommand("c1");
 		choiceButtonPanel.add(choice1);
 		
@@ -96,8 +96,8 @@ public class UI {
 		choice2.setForeground(Color.white);
 		choice2.setFont(normalFont);
 		choice2.setFocusPainted(false);
-		choice1.addActionListener(handler);
-		choice1.setActionCommand("c2");
+		choice2.addActionListener(cHandler);
+		choice2.setActionCommand("c2");
 		choiceButtonPanel.add(choice2);
 		
 		choice3 = new JButton("Choice 3");
@@ -105,8 +105,8 @@ public class UI {
 		choice3.setForeground(Color.white);
 		choice3.setFont(normalFont);
 		choice3.setFocusPainted(false);
-		choice1.addActionListener(handler);
-		choice1.setActionCommand("c3");
+		choice3.addActionListener(cHandler);
+		choice3.setActionCommand("c3");
 		choiceButtonPanel.add(choice3);
 		
 		choice4 = new JButton("Choice 4");
@@ -114,8 +114,8 @@ public class UI {
 		choice4.setForeground(Color.white);
 		choice4.setFont(normalFont);
 		choice4.setFocusPainted(false);
-		choice1.addActionListener(handler);
-		choice1.setActionCommand("c4");
+		choice4.addActionListener(cHandler);
+		choice4.setActionCommand("c4");
 		choiceButtonPanel.add(choice4);
 		
 		//Player Panel
